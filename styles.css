@@ -1,0 +1,291 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+	background-color: #6ddccf;
+}
+
+.alert.alert-dismissible{
+	width: 50%;
+	position: fixed;
+    z-index: 1;
+    padding: 50px;
+    left: 33.3%;
+    top: 10%;
+}
+
+.alert-dismissible p {
+	font-size: 1rem;
+	margin: 0;
+	text-align: center;
+}
+
+h1 {
+	color: white;
+	font-family: 'RocknRoll One', sans-serif;
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-left: 25px;
+}
+
+h4, h5 {
+	text-align: center;
+	padding-top: 10px;
+}
+
+#login {
+	background-color: #ffefa1;
+}
+
+.completed {
+	background-color: #eaeaea;
+	color: gray;
+}
+
+.bold-title {
+	font-weight: 600;
+    color: darkcyan;
+}
+
+.sightword_list_col {
+	background-color: #ffcb91;
+	height: 88vh;
+}
+
+#completion-status {
+    position: absolute;
+    right: 20px;
+    display: none;
+}
+
+#user-message, #log-out-message {
+	display: none;
+}
+
+.fa-arrow-circle-right {
+	color: #6ddccf;
+	vertical-align: middle;
+}
+
+.fa-arrow-circle-right:hover {
+	cursor: pointer;
+}
+
+.fa-hand-point-left {
+	color: #6ddccf;
+}
+
+.learned-words-list .list-group-item {
+	background-color: azure;
+}
+
+button.list-group-item {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.exercises_col h5 {
+	padding-top: 5%;
+	font-size: 2rem;
+	line-height: 2.5;
+}
+
+#word-intro {
+	display: none;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+h2, h6, #audio_wrapper{
+	text-align: center;
+}
+
+#main-word {
+	font-size: 3rem;
+}
+
+.fa-volume-up {
+	color: #6ddccf;
+	font-size: 2rem;
+}
+
+#speaker {
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+
+.stars {
+	position: absolute;
+	top: 80px;
+	color: #ffc107;
+	font-size: 2rem;
+	padding: 20px;
+	display: none;
+}
+
+@keyframes anime-star {
+	0% {font-size: 3rem; transform: rotate(10deg)}
+	25% {font-size: 2rem; transform: rotate(-10deg)}
+	50% {font-size: 2rem; transform: rotate(10deg)}
+	100% {font-size: 2rem;}
+}
+
+.star-animation {
+	animation: anime-star 1s;
+  	animation-fill-mode: forwards;
+  	animation-timing-function: ease-out;
+}
+
+.game-container {
+	display: none;
+	width: 70%;
+	margin: auto;
+	border-radius: 30px;
+	background-color: #6ddccf;
+	padding: 20px;
+}
+
+.circle {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	font-size: 2rem;
+	font-weight: 800;
+	color: #6ddccf;
+	text-align: center;
+	background: #fff;
+}
+
+.badge {
+	font-size: 1.5rem;
+}
+
+.word-choices, .letter-choices {
+	text-align: center;
+}
+
+.btn-light, .btn-warning {
+	margin: 20px;
+	font-size: 1.5rem;
+}
+
+.btn-light:hover {
+	font-weight: 800;
+}
+
+.btn-warning:disabled {
+	opacity: 1;
+}
+
+.btn-warning:focus, .btn:focus {
+	box-shadow: none;
+}
+
+.user-action-btn {
+	background-color: #6ddccf;
+	color: white;
+	font-weight: 600;
+	display: block;
+    margin: auto;
+}
+
+.user-action-btn:hover {
+	color: green;
+}
+
+@keyframes blinking_underline {
+	0% {border-bottom: 3px solid #f8f9fa;}
+	10% {border-bottom: 3px solid #4caf50;}
+	90% {border-bottom: 3px solid #4caf50;}
+	100% {border-bottom: 3px solid #f8f9fa;}
+}
+
+.chosen-letter {
+	text-align: center;
+	width: 50px;
+	height: 80px;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 2rem;
+	background-color: #f8f9fa;
+	display: none;
+}
+
+.chosen-letter-blinking {
+	animation: blinking_underline 2s infinite;
+}
+
+
+.alert{
+	display: none;
+	width: 70%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+
+.alert-success {
+	background-color: #0ab96a;
+	border: 0;
+	color: white;
+	font-weight: 800;
+	font-size: 2rem;
+}
+
+.alert-warning {
+	font-size: 2rem;
+}
+
+.next-btn, .check-btn {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	color: white;
+	font-weight: 800;
+	background-color: #6ddccf;
+	display: none;
+}
+
+.next-btn:hover, .check-btn:hover {
+	color: black;
+}
+
+.not-rounded {
+	border-radius: 0;
+	margin: 0;
+}
+
+#sentence {
+	padding-top: 25%;
+	padding-left: 25px;
+}
+
+.game3-row {
+	max-height: 250px;
+}
+
+#image {
+	max-height: 230px;
+	width: 100%;
+	border-radius: 30px;
+	object-fit: cover;
+	object-position: top;
+}
+
+form#user-login.d-flex {
+	display: none!important;
+}
+
+.dropdown{
+	display: none;
+}
+
+.dropdown .btn-warning {
+	color: #009688;
+	margin: 0;
+}
